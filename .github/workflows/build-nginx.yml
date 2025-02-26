@@ -52,7 +52,7 @@ jobs:
           tar -czvf nginx_freebsd.tar.gz nginx_build  # 将 nginx_build 目录打包
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5  # 修改这里！
         with:
           name: nginx_freebsd
           path: /tmp/nginx_freebsd.tar.gz
